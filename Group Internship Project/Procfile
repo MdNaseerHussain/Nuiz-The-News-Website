@@ -1,0 +1,1 @@
+web: node news.js

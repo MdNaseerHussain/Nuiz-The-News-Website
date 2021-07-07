@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= arr[0].topic%></title>
+    <link href="/css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <% arr.forEach(function(currArticle){ %>
+
+    <h1 id="f"><%= currArticle.title %></h1>
+    <img src="<%= currArticle.imgURL %>" alt="article-pic" />
+    <p><%=currArticle.shortContent%></p>
+
+    <% }); %>
+  </body>
+</html>
