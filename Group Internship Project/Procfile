@@ -1,1 +1,0 @@
-web: node news.js
