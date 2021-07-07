@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <%- include ("homedesign"); -%>
+    <title>NUIZ</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a
+        style="float: left"
+        class="nav-item-title"
+        href="https://nuiz.herokuapp.com/home"
+        >NUIZ</a
+      >
+      <a
+        style="float: right"
+        class="nav-item"
+        href="https://nuiz.herokuapp.com/articles/entertainment"
+        >Entertainment</a
+      >
+      <a
+        style="float: right"
+        class="nav-item"
+        href="https://nuiz.herokuapp.com/articles/technology"
+        >Technology</a
+      >
+      <a
+        style="float: right"
+        class="nav-item"
+        href="https://nuiz.herokuapp.com/articles/health"
+        >Health</a
+      >
+      <a
+        style="float: right"
+        class="nav-item"
+        href="https://nuiz.herokuapp.com/articles/business"
+        >Business</a
+      >
+      <a
+        style="float: right"
+        class="nav-item"
+        href="https://nuiz.herokuapp.com/articles/politics"
+        >Politics</a
+      >
+      <a
+        style="float: right"
+        class="nav-item"
+        href="https://nuiz.herokuapp.com/articles/sports"
+        >Sports</a
+      >
+      <a
+        style="float: right"
+        class="nav-item"
+        href="https://nuiz.herokuapp.com/home"
+        >Home</a
+      >
+    </nav>
+
+    <div class="fpage">
+      <div class="divs">
+        <!-- weather report -->
+        <div class="box">
+          <div class="wicon">
+            <img src="<%= Icon %>" />
+          </div>
+          <div class="wave -one"></div>
+          <div class="wave -two"></div>
+          <div class="wave -three"></div>
+          <div class="weathercon">
+            <i class="fas fa-sun" style="color: #d36326"></i>
+          </div>
+          <div class="info">
+            <h2 class="location"><%= Data9 %></h2>
+            <p class="date">
+              <%= Data10 %> | <%= Data11 %> <%= Data12 %> | <%= Data13
+              %>:<%=Data14 %>
+            </p>
+            <div class="temp">
+              <h1><%= Data8%></h1>
+              <h1 style="font-size: 1.5rem">
+                <%= Data7 %> &deg;C - <%= Data15 %> &deg;F
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="box covid-box">
+          <h2 class="location">Cases Across India</h2>
+          <li class="bg-blue">
+            <strong class="mob-hide"
+              >&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong
+            >
+            <strong class="mob-hide"
+              ><%=Data1%><span class="down"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+<%=Data2%><i
+                  class="fa fa-arrow-down"
+                ></i
+                >)</span
+              ></strong
+            >
+          </li>
+          <li class="bg-green">
+            <strong class="mob-hide"
+              >&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recovered
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong
+            >
+            <strong class="mob-hide"
+              ><%=Data5%><span class="cup"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+<%=Data6%><i
+                  class="fa fa-arrow-up"
+                ></i
+                >)</span
+              ></strong
+            >
+          </li>
+          <li class="bg-red">
+            <strong class="mob-hide"
+              >&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deaths
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong
+            >
+            <strong class="mob-hide"
+              ><%=Data3%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="up"
+                >(+<%=Data4%><i class="fa fa-arrow-up"></i>)</span
+              ></strong
+            >
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <div class="categories">
+      <!-- Categories here -->
+      <h1 class="h1-cat">CATEGORIES</h1>
+      <div class="img-row-top">
+        <a href="https://nuiz.herokuapp.com/articles/sports" class="grid">
+          <figure class="effect-chico">
+            <img
+              width="400px"
+              height="260px"
+              src="https://mediacloud.theweek.co.uk/image/private/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1607701736/theweek/2020/12/Cristiano%20Ronaldo%20Juventus%20Lionel%20Messi%20Barcelona%20%20%20%20GettyImages-1290158744.jpg"
+              alt="img04"
+            />
+            <figcaption>
+              <h2><span style="font-size: 1.8rem">Sports</span></h2>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="https://nuiz.herokuapp.com/articles/politics" class="grid">
+          <figure class="effect-chico">
+            <img
+              width="400px"
+              height="260px"
+              src="https://virtualspeech.com/img/blog/obama-presentation-history.jpg"
+              alt="img04"
+            />
+            <figcaption>
+              <h2><span style="font-size: 1.8rem">Politics</span></h2>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="https://nuiz.herokuapp.com/articles/business" class="grid">
+          <figure class="effect-chico">
+            <img
+              width="400px"
+              height="260px"
+              src="https://media.istockphoto.com/photos/business-development-to-success-and-growing-growth-concept-pointing-picture-id1145631842?k=6&m=1145631842&s=612x612&w=0&h=D9ToEIi64qlA4_w-VmN9CBvfW-D4DKvdJrG1jJU-GPk="
+              alt="img04"
+            />
+            <figcaption>
+              <h2><span style="font-size: 1.8rem">Business</span></h2>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <div class="img-row-bottom">
+        <a href="https://nuiz.herokuapp.com/articles/technology" class="grid">
+          <figure class="effect-chico">
+            <img
+              width="400px"
+              height="260px"
+              src="https://res-3.cloudinary.com/fieldfisher/image/upload/c_lfill,g_auto/f_auto,q_auto/v1/sectors/technology/tech_neoncircuitboard_857021704_medium_lc5h05"
+              alt="img04"
+            />
+            <figcaption>
+              <h2><span style="font-size: 1.8rem">Technology</span></h2>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="https://nuiz.herokuapp.com/articles/health" class="grid">
+          <figure class="effect-chico">
+            <img
+              width="400px"
+              height="260px"
+              src="https://i.pinimg.com/originals/10/20/4e/10204e2cf94ed01b71805a97cdf1047b.jpg"
+              alt="img04"
+            />
+            <figcaption>
+              <h2><span style="font-size: 1.8rem">Health</span></h2>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a
+          href="https://nuiz.herokuapp.com/articles/entertainment"
+          class="grid"
+        >
+          <figure class="effect-chico">
+            <img
+              width="400px"
+              height="260px"
+              src="https://assets-news-bcdn.dailyhunt.in/cmd/resize/wxh__DHQ_/fetchdata16/images/32/bb/4b/32bb4b8968f3cf679b88b9c1b10b9a8af19cf5e30a8249cbc4f7a91aadf43bfd.jpg"
+              alt="img04"
+            />
+            <figcaption>
+              <h2><span style="font-size: 1.8rem">Entertainment</span></h2>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="footer-class">&copy; NUIZ 2021</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<%- include("header"); -%> <%- include("styles"); -%>
+
+<body class="slides animated noPreload">
+  <!-- Navigation Side bar -->
+  <nav class="side">
+    <div class="navigation default">
+      <ul></ul>
+    </div>
+  </nav>
+  <!-- Panel Top -->
+  <nav class="panel top">
+    <div class="sections desktop">
+      <div class="left">
+        <a href="https://nuiz.herokuapp.com/home" title="Slides Framework"
+          >NUIZ</a
+        >
+      </div>
+      <div class="right">
+        <ul class="menu">
+          <li><a href="https://nuiz.herokuapp.com/home">Home</a></li>
+          <li>
+            <a href="https://nuiz.herokuapp.com/articles/sports">Sports</a>
+          </li>
+          <li>
+            <a href="https://nuiz.herokuapp.com/articles/politics">Politics</a>
+          </li>
+          <li>
+            <a href="https://nuiz.herokuapp.com/articles/business">Business</a>
+          </li>
+          <li>
+            <a href="https://nuiz.herokuapp.com/articles/health">Health</a>
+          </li>
+          <li>
+            <a href="https://nuiz.herokuapp.com/articles/technology"
+              >Technology</a
+            >
+          </li>
+          <li>
+            <a href="https://nuiz.herokuapp.com/articles/entertainment"
+              >Entertainment</a
+            >
+          </li>
+        </ul>
+        <!-- <a class="button blue rounded small" href="#">Profile</a> -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- White Slide -->
+  <% for(let i = 0; i < arr.length - 1; i += 2) { %>
+  <section class="slide whiteSlide">
+    <div class="content">
+      <div class="container">
+        <div class="wrap" style="padding-top: 1rem; padding-bottom: 1rem">
+          <!-- content -->
+          <div class="items">
+            <div class="ldiv">
+              <img src="<%= arr[i].imgURL %>" class="lp ae-1" />
+              <div>
+                <h1 class="ae-1 card-title"><%= arr[i].title %></h1>
+                <p class="ae-2 ltext">
+                  <span class="opacity-8"
+                    ><%= arr[i].shortContent.substr(0,200) %>
+                    <a href="<%= arr[i].fullArticleUrl%>" style="color: blue"
+                      >Read More</a
+                    ></span
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="rdiv">
+              <img src="<%= arr[i + 1].imgURL %>" class="rp ae-1" />
+              <div>
+                <h1 class="ae-1 card-title"><%= arr[i + 1].title %></h1>
+                <p class="ae-2 rtext">
+                  <span class="opacity-8">
+                    <%= arr[i + 1].shortContent.substr(0, 200) %>
+                    <a
+                      href="<%= arr[i + 1].fullArticleUrl%>"
+                      style="color: blue"
+                      >Read More</a
+                    >
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <% } %>
+</body>
+
+<%- include("footer"); -%>
