@@ -2,7 +2,9 @@
 
 You can access the website at: https://nuiz.herokuapp.com
 
-Website provides information on Covid in India and weather in Bhubaneswar and News on various categories.
+Website provides information on Covid in India and weather in Bhubaneswar and News on various categories using appropriate APIs.
+
+The data from the APIs update every 15 minutes.
 
 ## Home Page
 ![Home Page Image](https://github.com/MdNaseerHussain/Nuiz-The-News-Website/blob/main/public/PageScreenshots/Screenshot%202021-07-08%20220714.png)
