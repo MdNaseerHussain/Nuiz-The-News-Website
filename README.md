@@ -1,13 +1,23 @@
 # Nuiz (The News Website)
 
-You can access the website at: https://nuiz.herokuapp.com
+Find Breaking Hot News from our website [NUIZ](https://nuiz.herokuapp.com/home) - https://nuiz.herokuapp.com.
+<br /><br />
+Group Project by:  **Naseer, Nitish, Bharat and Dhiren**.
 
-Website provides information on Covid in India and weather in Bhubaneswar and News on various categories using appropriate APIs.
+## Features:
+* Current Weather Data.
+* Covid Cases in India (Total, recovered and deaths).
+* Top headlines of different Categories.
+* Attractive User Interface with clean animations between slides.
 
-The data from the APIs update every 15 minutes.
-
-## Home Page
+### Home Page
 ![Home Page Image](https://github.com/MdNaseerHussain/Nuiz-The-News-Website/blob/main/public/PageScreenshots/Screenshot%202021-07-08%20220714.png)
 
-## Category News Page
+### Category News Page
 ![Category News Image](https://github.com/MdNaseerHussain/Nuiz-The-News-Website/blob/main/public/PageScreenshots/Screenshot%202021-07-08%20220926.png)
+
+## Where we get our Information from?
+API's are used to extract latest and updated news in our websites.
+<br />
+<br />
+*Happy Reading*
